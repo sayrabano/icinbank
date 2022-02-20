@@ -1,4 +1,14 @@
-
+<nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(0,0,0,0.4)">
+    <a class="navbar-brand" routerLink="/">ICIN BANK APP </a>
+  
+      <ul class="navbar-nav ml-auto dark">
+  
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/register">Sign Up</a>
+          </li>
+        
+  </ul>
+  </nav>
 
 <div class="container">
 <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
@@ -31,7 +41,9 @@
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
             Login
         </button>
-        <a routerLink="/register" class="btn btn-link">Register</a>
+        <br>
+        <br>
+        <a routerLink="/register" class="btn btn-secondary">Register</a>
     </div>
 </form>
 </div>

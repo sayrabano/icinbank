@@ -1,16 +1,32 @@
 
+<nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(0,0,0,0.4)">
+  <a class="navbar-brand" routerLink="/">ICIN BANK APP </a>
+
+    <ul class="navbar-nav ml-auto dark">
+
+      
+      
+</ul>
+</nav>
+
 <div class="container">
+
+
   
   <div class="text-center">
     <img src="assets/img/user.png" style="width: 60px;">
 </div>
-<h1 class="text-center">Admin Login Portal</h1>
+
+
+
+<h1 class="text-center">Admin Login </h1>
 <form class="form-login" (ngSubmit)="onSubmit(loginForm)"  #loginForm="ngForm">
     
-    <label for="inputUserName" class="sr-only">UserName</label>
+    <label for="inputUserName" class="sr-only">Username</label>
+    
     <input type="text" id="inputUserName" name="inputUserName" class="form-control"  [ngClass]="{ 'is-invalid': submitted && inputUserName.errors }" ngModel placeholder="UserName" required autofocus #inputUserName= ngModel>
     <div *ngIf="submitted && inputUserName.errors" class="invalid-feedback">
-      <span *ngIf="inputUserName.errors.required">Please enter a UserName</span>
+      <span *ngIf="inputUserName.errors.required">Please enter a Username</span>
     </div>
     
     
@@ -21,6 +37,7 @@
     </div>
     <br>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+   
   </form>
 </div>
 

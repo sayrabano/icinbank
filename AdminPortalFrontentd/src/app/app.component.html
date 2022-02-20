@@ -1,25 +1,25 @@
 <!-- <p>user-homepage works!</p> -->
 <div *ngIf="authenticationService.isAuthenticated">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" routerLink="/user-account">ICIN Bank</a>
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(0,0,0,0.4)">
+      <a class="navbar-brand" routerLink="/user-account">ICIN BANK APP </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto dark">
   
           <li class="nav-item">
             <a class="nav-link" routerLink="/user-account">User Account Info</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"routerLink="/checkbook-requests" >CheckBook Requests</a>
+            <a class="nav-link"routerLink="/checkbook-requests" >CheckBookRequest</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"routerLink="/authorize" >Authorization(KYC)</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" (click)="logout()">Log Out</a>
+          <a class="nav-link" (click)="logout()">Logout</a>
           </li>
 
         </ul>
